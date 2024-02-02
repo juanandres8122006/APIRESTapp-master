@@ -1,0 +1,60 @@
+.cardPoke {
+  background-color: #f8f9fa;
+  border-radius: 15px;
+  border: 2px solid #343a40; 
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  color: #212529; 
+  padding: 20px;
+  transition: background-color 0.3s ease;
+  text-align: center;
+}
+
+.cardPoke:hover {
+  background-color: #e9ecef; 
+}
+
+.cardPoke ion-input,
+.cardPoke ion-label {
+  font-family: 'Arial', sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  color: #212529;
+}
+
+ion-title {
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: center; 
+}
+
+ion-content {
+  background-color: #f0f0f0;
+}
+
+.cardPoke {
+  background-color: #ffffff;
+  border-radius: 15px;
+  border: 2px solid #343a40;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  color: #212529;
+  padding: 20px;
+  transition: background-color 0.3s ease;
+  text-align: center;
+  margin-bottom: 20px; 
+}
+
+.cardPoke:hover {
+  background-color: #e9ecef;
+}
+
+.cardPoke ion-input,
+.cardPoke ion-label {
+  font-family: 'Arial', sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  color: #212529;
+}
+
+.cardCol {
+  margin-bottom: 20px;
+}

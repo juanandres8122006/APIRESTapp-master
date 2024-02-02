@@ -1,0 +1,85 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title class="header-title">Pokédex</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content fullscreen="true">
+  <ion-grid>
+    <ion-row class="search-row">
+      <ion-col size="12" class="cardCol">
+        <ion-card class="cardPoke">
+          <ion-card-header>
+            <ion-input type="number" [(ngModel)]="name" placeholder="Buscar por ID"></ion-input>
+            <ion-button (click)="getPokemonData(name)">
+              <ion-icon name="search"></ion-icon>
+            </ion-button>
+          </ion-card-header>
+          <ion-card-content>
+            <ion-label class="result-label">ID: {{pokemon.id}}</ion-label>
+            <ion-img [src]=pokemon.sprites.front_default></ion-img>
+            <ion-label class="result-label">Nombre: {{pokemon.name}}</ion-label>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+
+
+    <ion-row class="separator-row"></ion-row>
+
+    <ion-row class="search-row">
+      <ion-col size="12" class="cardCol">
+        <ion-card class="cardPoke">
+          <ion-card-header>
+            <ion-input [(ngModel)]="name2" placeholder="Buscar por Nombre"></ion-input>
+            <ion-button (click)="getPokemonData2(name2)">
+              <ion-icon name="search"></ion-icon>
+            </ion-button>
+          </ion-card-header>
+          <ion-card-content>
+            <ion-label class="result-label">ID: {{pokemon2.id}}</ion-label>
+            <ion-img [src]=pokemon2.sprites.front_default></ion-img>
+            <ion-label class="result-label">Nombre: {{pokemon2.name}}</ion-label>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+
+    <ion-row class="search-row">
+      <ion-col size="12" class="cardCol">
+        <ion-card class="cardPoke">
+          <ion-card-header>
+            <ion-input type="number" [(ngModel)]="nameItem" placeholder="Buscar por ID de Item"></ion-input>
+            <ion-button (click)="getPokemonData3(nameItem)">
+              <ion-icon name="search"></ion-icon>
+            </ion-button>
+          </ion-card-header>
+          <ion-card-content>
+            <ion-label class="result-label">ID: {{item.id}}</ion-label>
+            <ion-img [src]=item.sprites.default></ion-img>
+            <ion-label class="result-label">Nombre: {{item.name}}</ion-label>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+
+    <ion-row class="search-row">
+      <ion-col size="12" class="cardCol">
+        <ion-card class="cardPoke">
+          <ion-card-header>
+            <ion-input [(ngModel)]="nameItem2" placeholder="Buscar por Nombre de Item"></ion-input>
+            <ion-button (click)="getPokemonData4(nameItem2)">
+              <ion-icon name="search"></ion-icon>
+            </ion-button>
+          </ion-card-header>
+          <ion-card-content>
+            <ion-label class="result-label">ID: {{item2.id}}</ion-label>
+            <ion-img [src]=item2.sprites.default></ion-img>
+            <ion-label class="result-label">Nombre: {{item2.name}}</ion-label>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+
+  </ion-grid>
+</ion-content>
